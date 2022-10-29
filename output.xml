@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20221029 19:46:33.158" rpa="false" schemaversion="3">
+<suite id="s1" name="ROBOOOOOT" source="D:\ROBOOOOOT">
+<suite id="s1-s1" name="111" source="D:\ROBOOOOOT\111.robot">
+<test id="s1-s1-t1" name="Google News" line="12">
+<kw name="GO TO Books">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221029 19:46:33.427" level="INFO">Opening browser 'chrome' to base url 'https://www.books.com.tw/web/books_topm_01/?loc=P_0005_001'.</msg>
+<status status="PASS" starttime="20221029 19:46:33.427" endtime="20221029 19:46:36.158"/>
+</kw>
+<status status="PASS" starttime="20221029 19:46:33.426" endtime="20221029 19:46:36.158"/>
+</kw>
+<kw name="Check Title">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>//*[@id="index-page"]/body/div[4]/div[2]/div[2]/ul/li/span/a</arg>
+<arg>${Title}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20221029 19:46:36.161" level="INFO">Verifying element '//*[@id="index-page"]/body/div[4]/div[2]/div[2]/ul/li/span/a' contains exact text '文學小說'.</msg>
+<status status="PASS" starttime="20221029 19:46:36.160" endtime="20221029 19:46:36.190"/>
+</kw>
+<status status="PASS" starttime="20221029 19:46:36.159" endtime="20221029 19:46:36.190"/>
+</kw>
+<kw name="Click Bookname Button">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="index-page"]/body/div[4]/div[1]/div[4]/div[1]/div/div[1]/div[1]/h4/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221029 19:46:36.192" level="INFO">Clicking element '//*[@id="index-page"]/body/div[4]/div[1]/div[4]/div[1]/div/div[1]/div[1]/h4/a'.</msg>
+<status status="PASS" starttime="20221029 19:46:36.192" endtime="20221029 19:46:37.171"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="0010939127-page"]/body/div[5]/div/div[1]/div[3]/ul/li[1]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221029 19:46:37.171" endtime="20221029 19:46:37.201"/>
+</kw>
+<status status="PASS" starttime="20221029 19:46:36.191" endtime="20221029 19:46:37.201"/>
+</kw>
+<kw name="Check Book Title">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>//*[@id="0010939127-page"]/body/div[4]/div/div[1]/div[2]/div[1]/h1</arg>
+<arg>${Book Title}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20221029 19:46:37.203" level="INFO">Verifying element '//*[@id="0010939127-page"]/body/div[4]/div/div[1]/div[2]/div[1]/h1' contains exact text '大人的謊言生活：【文學界備受推崇的覆面系作家，義大利文直譯中文版】'.</msg>
+<status status="PASS" starttime="20221029 19:46:37.203" endtime="20221029 19:46:37.245"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221029 19:46:37.246" endtime="20221029 19:46:39.457"/>
+</kw>
+<status status="PASS" starttime="20221029 19:46:37.202" endtime="20221029 19:46:39.458"/>
+</kw>
+<status status="PASS" starttime="20221029 19:46:33.425" endtime="20221029 19:46:39.459"/>
+</test>
+<doc>Robot Framework Booktest</doc>
+<status status="PASS" starttime="20221029 19:46:33.193" endtime="20221029 19:46:39.463"/>
+</suite>
+<status status="PASS" starttime="20221029 19:46:33.163" endtime="20221029 19:46:39.468"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="ROBOOOOOT">ROBOOOOOT</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="111">ROBOOOOOT.111</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
